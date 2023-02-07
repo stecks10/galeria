@@ -1,0 +1,23 @@
+:root {
+  --ff-heading: "epilogue", sans-serif;
+  --ff-texting: "Open Sans", sans-serif;
+
+  --bg-primary: hsl(237, 22%, 20%);
+  --fc-primary: #ffffff;
+  --fc-secondary: hsl(249, 50%, 80%);
+}
+
+body {
+  font-family: var(--ff-texting);
+
+  background-color: var(--bg-primary);
+  color: var(--fc-primary);
+}
+
+header {
+  font-family: var(--ff-heading);
+}
+
+header p {
+  color: var(--fc-secondary);
+}
