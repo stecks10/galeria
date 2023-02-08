@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --ff-heading: "epilogue", sans-serif;
   --ff-texting: "Open Sans", sans-serif;
@@ -5,6 +11,9 @@
   --bg-primary: hsl(237, 22%, 20%);
   --fc-primary: #ffffff;
   --fc-secondary: hsl(249, 50%, 80%);
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
 }
 
 body {
@@ -12,12 +21,28 @@ body {
 
   background-color: var(--bg-primary);
   color: var(--fc-primary);
+  font-size: var(--fs-body);
 }
 
 header {
+  margin: 10rem 0 8rem;
   font-family: var(--ff-heading);
+
+  text-align: center;
 }
 
 header p {
   color: var(--fc-secondary);
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+  line-height: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 1.7rem;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: var(--ff-heading);
+  line-height: 4.8rem;
 }
