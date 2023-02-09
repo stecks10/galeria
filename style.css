@@ -4,9 +4,33 @@
   box-sizing: border-box;
 }
 
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 main {
   display: grid;
   gap: 3.2rem;
+  animation: downtop 700ms 350ms backwards;
 }
 
 :root {
@@ -44,6 +68,7 @@ header {
   font-family: var(--ff-heading);
 
   text-align: center;
+  animation: topdown 700ms;
 }
 
 header p {
